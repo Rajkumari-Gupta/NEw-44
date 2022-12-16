@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(../image/eagle.avif);
+    background-blend-mode: lighten;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.navbar{
+    background: rgba(150, 100, 95, 0.7);
+    text-align: center;
+    
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navbar ul li{
+    width: 100%;
+    font-size: 20px;
+    margin: 12px;
+    padding: 20px;
+    
+    
+}
+.navbar ul li a{
+    color: black;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: grey;
+     border-radius: 3px;
+     border: 2px solid grey;
+}
+.subabout{
+   display: none;
+}
+.navbar ul li:hover .subabout{
+    display: block;
+    position: absolute;
+    background: rgb(238, 160, 71);
+    margin-top: 15px;
+    /* margin-left: -15px; */
+}
+.navbar ul li:hover .subabout ul{
+    display: block;
+    margin: 10px;
+    text-align-last: left;
+}
+.navbar ul li:hover .subabout ul li{
+    width: 100px;
+    border-bottom: 1px dotted black;
+    text-align: left;
+}
+.navbar ul li:hover .subabout ul li:last-child{
+    border-bottom: none;
+
+}
+.bodi{
+    margin-top: 250px;
+    width: 100%;
+    /* border: 2px solid black; */
+    /* height: 50px; */
+    padding: 20px
+}
+.bodi marquee{
+    font-size: 50px;
+}
